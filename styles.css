@@ -5,14 +5,12 @@
     box-sizing: border-box;
 }
 
-html {
-    width: 100vw;
-}
-
 body {
     width: 100%;
 
     overflow-x: hidden;
+
+    font-family: sans-serif;
 }
 
 nav {
@@ -21,6 +19,9 @@ nav {
 
     display: flex;
     list-style: none;
+
+    background-color: #0E131B;
+    color: #d0d0d0;
 }
 
 nav li {
@@ -43,8 +44,8 @@ main {
     height: calc(100vh - 100px);
 
     background: url('image.png');
-    background-position: right bottom 40%;
-    background-size: cover;
+    background-position: calc(50% - 9vw) calc(50% - 18vh);
+    background-size: 250vh auto;
     background-repeat: no-repeat;
 
     z-index: -2;
@@ -79,7 +80,7 @@ main {
 
     z-index: -1;
 
-    transition: 150ms ease-out;
+    /* transition: 150ms width ease-out; */
 }
 
 .plane-svg-cont {
@@ -88,12 +89,12 @@ main {
 }
 
 .plane-svg-cont img {
-    width: 200vh;
+    width: 245vh;
     height: auto;
     
     position: absolute;
     right: 0;
-    transform: translateX(51%);
+    transform: translateX(51%) translateY(-7%);
     /* transform: translateX(5vw); */
 }
 
